@@ -177,4 +177,33 @@ document.addEventListener('DOMContentLoaded', () => {
       showToast(link.dataset.test, 'Tambahkan URL Google Form atau platform kuis pada atribut href tautan ini.', false);
     });
   });
+
+  const lkmFiles = [
+    'Kasus 1-Infografis.docx',
+    'Kasus 2-Infografis .docx',
+    'Kasus 3-Infografis.docx',
+    'Kasus 4-Infografis.docx',
+    'Kasus 5-Infografis.docx',
+    'Kasus 6-Infografis.docx',
+    'Kasus 7-Infografis.docx',
+    'Kasus 8-Infografis.docx',
+    'Kasus 9-Infografis.docx',
+  ];
+  const materiFour = document.querySelector('#collapseFour .accordion-body');
+  if (materiFour) {
+    const downloadPanel = document.createElement('section');
+    downloadPanel.className = 'lkm-download-panel';
+    downloadPanel.innerHTML = `
+      <h4><i class="fa-solid fa-download"></i> Unduh LKM</h4>
+      <p>Pilih salah satu dari 9 LKM berikut untuk dikerjakan.</p>
+      <div class="lkm-download-grid">
+        ${lkmFiles.map((fileName, index) => `
+          <a class="lkm-download-link" href="LKM/${fileName}" download>
+            <span class="lkm-download-number">${String(index + 1).padStart(2, '0')}</span>
+            <span><strong>LKM Kasus ${index + 1}</strong><small>Format DOCX</small></span>
+            <i class="fa-solid fa-download"></i>
+          </a>`).join('')}
+      </div>`;
+    materiFour.insertBefore(downloadPanel, materiFour.querySelector('.row.g-4'));
+  }
 });
