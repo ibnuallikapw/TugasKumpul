@@ -47,3 +47,4 @@ Jika file belum masuk ke Drive, pilih fungsi **cekAksesFolderLKM** di editor App
 Jika tab **Log Pengumpulan LKM** menampilkan error izin `DriveApp.Folder.createFile`, pilih fungsi **aktifkanIzinUploadLKM** lalu klik **Run**. Saat Google meminta izin, pilih akun yang melakukan deployment dan setujui akses Google Drive. Fungsi ini membuat file uji di folder Materi 1 lalu langsung memindahkannya ke Sampah; tidak ada file uji yang tersisa di folder pengumpulan.
 
 Setiap percobaan unggah LKM juga akan dicatat di tab spreadsheet **Log Pengumpulan LKM**. Kolom **Status** menunjukkan `Berhasil` atau alasan kegagalan, sedangkan kolom **Tautan File** menyediakan tautan langsung ke file Google Drive yang berhasil diunggah.
+
