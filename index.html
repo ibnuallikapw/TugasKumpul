@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Ruang belajar digital untuk materi, tugas, dan refleksi." />
-    <title>Ruang Belajar | E-Learning</title>
+    <meta name="description" content="Ruang belajar digital untuk materi, tugas, Digital Case Investigation, dan refleksi." />
+    <title>Ruang Belajar | E-Learning & Digital Investigation</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="site-header">
+    <!-- HEADER & NAVBAR -->
+    <header class="site-header sticky-top">
       <nav class="navbar navbar-expand-lg navbar-dark container py-3">
         <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#beranda">
           <span class="brand-icon"><i class="fa-solid fa-graduation-cap"></i></span>
@@ -23,46 +24,57 @@
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
             <li class="nav-item"><a class="nav-link active" href="#beranda">Beranda</a></li>
             <li class="nav-item"><a class="nav-link" href="#materi">Materi</a></li>
-            <li class="nav-item"><a class="btn btn-light btn-sm px-3 ms-lg-2" href="#materi">Mulai Belajar</a></li>
+            <li class="nav-item"><a class="nav-link" href="#dci"><i class="fa-solid fa-magnifying-glass me-1"></i>Digital Case Investigation</a></li>
+            <li class="nav-item"><a class="btn btn-light btn-sm px-3 ms-lg-2 fw-bold" href="#materi">Mulai Belajar</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main>
+      <!-- HERO SECTION -->
       <section id="beranda" class="hero-section">
         <div class="container">
           <div class="row align-items-center g-5">
             <div class="col-lg-7">
-              <span class="eyebrow"><i class="fa-solid fa-sparkles"></i> Pembelajaran lebih terarah</span>
+              <span class="eyebrow"><i class="fa-solid fa-sparkles"></i> Pembelajaran Berbasis Kasus & Digital Investigation</span>
               <h1>Semua kebutuhan belajar dalam <span>satu ruang.</span></h1>
-              <p class="hero-copy">Akses materi, kerjakan pretest dan posttest, unggah LKM, lalu tuliskan refleksimu di setiap pertemuan.</p>
-              <a class="btn btn-primary btn-lg px-4" href="#materi">Lihat Materi <i class="fa-solid fa-arrow-right ms-2"></i></a>
+              <p class="hero-copy">Akses materi, ikuti Digital Case Investigation, kerjakan pretest dan posttest, unggah LKM, lalu tuliskan refleksimu di setiap pertemuan.</p>
+              <div class="d-flex flex-wrap gap-3">
+                <a class="btn btn-primary btn-lg px-4 fw-bold" href="#materi">Lihat Materi <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                <a class="btn btn-outline-light btn-lg px-4 fw-bold" href="#dci"><i class="fa-solid fa-magnifying-glass me-2"></i>Ruang DCI</a>
+              </div>
             </div>
             <div class="col-lg-5">
               <div class="hero-card">
                 <div class="hero-card-top"><span>Progres Belajar</span><i class="fa-solid fa-chart-line"></i></div>
-                <div class="progress-number">5 <small>materi tersedia</small></div>
+                <div class="progress-number">6 <small>materi + DCI aktif</small></div>
                 <div class="progress" role="progressbar" aria-label="Materi yang tersedia" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                   <div class="progress-bar" style="width: 100%"></div>
                 </div>
-                <div class="mini-steps"><span><i class="fa-solid fa-book-open"></i> Pelajari</span><span><i class="fa-solid fa-pen-to-square"></i> Kerjakan</span><span><i class="fa-solid fa-lightbulb"></i> Refleksikan</span></div>
+                <div class="mini-steps">
+                  <span><i class="fa-solid fa-book-open"></i> Pelajari</span>
+                  <span><i class="fa-solid fa-magnifying-glass"></i> Investigasi</span>
+                  <span><i class="fa-solid fa-pen-to-square"></i> Keputusan</span>
+                  <span><i class="fa-solid fa-lightbulb"></i> Refleksi</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- SECTION MATERI -->
       <section id="materi" class="materials-section py-5">
         <div class="container py-lg-4">
           <div class="section-heading text-center mx-auto">
             <span class="eyebrow eyebrow-dark">Daftar Pembelajaran</span>
             <h2>Pilih materi yang ingin dipelajari</h2>
-            <p>Klik judul materi untuk membuka aktivitas pembelajaran. Semua isian berikut disediakan untuk tiap materi.</p>
+            <p>Klik judul materi untuk membuka aktivitas pembelajaran. LKM interaktif Digital Case Investigation menyesuaikan kasus dengan materi yang dipilih.</p>
           </div>
 
           <div class="accordion learning-accordion" id="materialsAccordion">
-            <!-- Untuk menambah materi, salin satu blok .accordion-item di bawah ini dan ubah teks serta tautannya. -->
+            <!-- MATERI 1 -->
             <article class="accordion-item">
               <h3 class="accordion-header" id="headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -73,45 +85,1131 @@
               </h3>
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#materialsAccordion">
                 <div class="accordion-body">
-                  <p class="material-description">Pelajari komponen sistem komputer dan gunakan konsep IPO untuk menganalisis permasalahan komputer melalui studi kasus berbasis bukti.</p>
+                  <p class="material-description">Pelajari komponen sistem komputer dan gunakan konsep IPO untuk menganalisis permasalahan komputer laboratorium melalui studi kasus berbasis bukti.</p>
+                  
                   <div class="activity-grid">
                     <a class="activity-card material-link" href="/Users/user/Documents/TesterKumpul/Materi/Materi IPO,Hardware,Software,SO.pptx" target="_blank" rel="noopener">
-                      <span class="activity-icon blue"><i class="fa-solid fa-book-open"></i></span><span><strong>Materi Pembelajaran</strong><small>Buka atau unduh modul</small></span><i class="fa-solid fa-arrow-up-right-from-square action-arrow"></i>
+                      <span class="activity-icon blue"><i class="fa-solid fa-book-open"></i></span>
+                      <span><strong>Materi Pembelajaran</strong><small>Buka atau unduh modul</small></span>
+                      <i class="fa-solid fa-arrow-up-right-from-square action-arrow"></i>
                     </a>
                     <a class="activity-card test-link" href="https://forms.gle/QGvso41Vcti7hmvp9" data-test="Pretest: Konsep Dasar Kecerdasan Buatan">
-                      <span class="activity-icon purple"><i class="fa-solid fa-clipboard-question"></i></span><span><strong>Pretest</strong><small>Ukur pemahaman awal</small></span><i class="fa-solid fa-arrow-right action-arrow"></i>
+                      <span class="activity-icon purple"><i class="fa-solid fa-clipboard-question"></i></span>
+                      <span><strong>Pretest</strong><small>Ukur pemahaman awal</small></span>
+                      <i class="fa-solid fa-arrow-right action-arrow"></i>
                     </a>
                     <a class="activity-card test-link" href="https://forms.gle/vRVaon5gyLZdSJr87" data-test="Posttest: Konsep Dasar Kecerdasan Buatan">
-                      <span class="activity-icon green"><i class="fa-solid fa-square-poll-vertical"></i></span><span><strong>Posttest</strong><small>Evaluasi setelah belajar</small></span><i class="fa-solid fa-arrow-right action-arrow"></i>
+                      <span class="activity-icon green"><i class="fa-solid fa-square-poll-vertical"></i></span>
+                      <span><strong>Posttest</strong><small>Evaluasi setelah belajar</small></span>
+                      <i class="fa-solid fa-arrow-right action-arrow"></i>
                     </a>
                   </div>
+
+                  <!-- PROMO/LINK AKTIVITAS DCI UTAMA -->
+                  <div class="dci-promo-card my-4 p-4 rounded-4 border">
+                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+                      <div>
+                        <span class="badge bg-primary mb-2 px-3 py-2 fs-7"><i class="fa-solid fa-magnifying-glass me-1"></i> Aktivitas Utama LKM Digital</span>
+                        <h4 class="fw-bold mb-1">Mulai Digital Case Investigation</h4>
+                        <p class="text-muted small mb-0">Analisis kasus, evaluasi bukti, dan buat keputusan berbasis informasi secara langsung di ruang investigasi digital.</p>
+                      </div>
+                      <a class="btn btn-primary px-4 py-2 fw-bold rounded-3 shadow-sm btn-open-dci" href="#dci">
+                        <i class="fa-solid fa-user-ninja me-2"></i>Buka Ruang Investigasi
+                      </a>
+                    </div>
+                  </div>
+
                   <div class="row g-4 mt-1">
-                    <div class="col-lg-5"><form class="task-form content-panel"><h4><i class="fa-solid fa-folder-open"></i> Pengumpulan LKM</h4><p>Unggah jawaban LKM dalam format PDF, DOC, atau DOCX.</p><label class="file-picker"><input type="file" accept=".pdf,.doc,.docx" required /><i class="fa-solid fa-cloud-arrow-up"></i><span>Pilih file jawaban</span><small>Belum ada file dipilih</small></label><button class="btn btn-dark w-100 mt-3" type="submit">Kumpulkan LKM</button></form></div>
-                    <div class="col-lg-7"><form class="reflection-form content-panel"><h4><i class="fa-solid fa-comments"></i> Refleksi Belajar</h4><div class="row g-3"><div class="col-md-6"><label class="form-label" for="name-1">Nama</label><input class="form-control" id="name-1" type="text" placeholder="Nama lengkap" required /></div><div class="col-md-6"><label class="form-label" for="class-1">Kelas</label><input class="form-control" id="class-1" type="text" placeholder="Contoh: X-A" required /></div><div class="col-12"><label class="form-label" for="reflection-1">Apa yang kamu pelajari hari ini?</label><textarea class="form-control" id="reflection-1" rows="3" placeholder="Tuliskan pemahaman atau kesulitanmu..." required></textarea></div></div><button class="btn btn-primary mt-3" type="submit">Kirim Refleksi</button></form></div>
+                    <div class="col-lg-5">
+                      <form class="task-form content-panel">
+                        <h4><i class="fa-solid fa-folder-open"></i> Pengumpulan LKM File (Alternatif)</h4>
+                        <p>Pengumpulan file LKM fisik/offline format PDF, DOC, atau DOCX jika tidak menggunakan DCI online.</p>
+                        <label class="file-picker">
+                          <input type="file" accept=".pdf,.doc,.docx" required />
+                          <i class="fa-solid fa-cloud-arrow-up"></i>
+                          <span>Pilih file jawaban</span>
+                          <small>Belum ada file dipilih</small>
+                        </label>
+                        <button class="btn btn-dark w-100 mt-3" type="submit">Kumpulkan File LKM</button>
+                      </form>
+                    </div>
+                    <div class="col-lg-7">
+                      <form class="reflection-form content-panel">
+                        <h4><i class="fa-solid fa-comments"></i> Refleksi Belajar Materi 1</h4>
+                        <div class="row g-3">
+                          <div class="col-md-6">
+                            <label class="form-label" for="name-1">Nama</label>
+                            <input class="form-control" id="name-1" type="text" placeholder="Nama lengkap" required />
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label" for="class-1">Kelas</label>
+                            <input class="form-control" id="class-1" type="text" placeholder="Contoh: 10 - TKI" required />
+                          </div>
+                          <div class="col-12">
+                            <label class="form-label" for="reflection-1">Apa yang kamu pelajari hari ini?</label>
+                            <textarea class="form-control" id="reflection-1" rows="3" placeholder="Tuliskan pemahaman atau kesulitanmu..." required></textarea>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary mt-3" type="submit">Kirim Refleksi</button>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
             </article>
 
+            <!-- MATERI 2 -->
             <article class="accordion-item">
               <h3 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span class="material-number">02</span><span><small>Materi 2</small> Konsep Dasar AI</span><span class="duration ms-auto me-3"><i class="fa-regular fa-clock"></i> 4 JP</span></button></h3>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#materialsAccordion"><div class="accordion-body"><p class="material-description">Kenali konsep dasar Artificial Intelligence (AI), cara kerja, model pembelajaran AI, Generative AI, Prompt Engineering, serta etika penggunaan AI dalam kehidupan sehari-hari.</p><div class="activity-grid"><a class="activity-card material-link" href="/Users/user/Documents/TesterKumpul/Materi/Materi Konsep Dasar AI.pptx" target="_blank" rel="noopener"><span class="activity-icon blue"><i class="fa-solid fa-book-open"></i></span><span><strong>Materi Pembelajaran</strong><small>Buka atau unduh modul</small></span><i class="fa-solid fa-arrow-up-right-from-square action-arrow"></i></a><a class="activity-card test-link" href="https://forms.gle/zuTKHNJYQFEVmLoi9" data-test="Pretest: Prompt Engineering"><span class="activity-icon purple"><i class="fa-solid fa-clipboard-question"></i></span><span><strong>Pretest</strong><small>Ukur pemahaman awal</small></span><i class="fa-solid fa-arrow-right action-arrow"></i></a><a class="activity-card test-link" href="https://forms.gle/79EzLMZTMQP8SYpAA" data-test="Posttest: Prompt Engineering"><span class="activity-icon green"><i class="fa-solid fa-square-poll-vertical"></i></span><span><strong>Posttest</strong><small>Evaluasi setelah belajar</small></span><i class="fa-solid fa-arrow-right action-arrow"></i></a></div><div class="row g-4 mt-1"><div class="col-lg-5"><form class="task-form content-panel"><h4><i class="fa-solid fa-folder-open"></i> Pengumpulan LKM</h4><p>Unggah jawaban LKM dalam format PDF, DOC, atau DOCX.</p><label class="file-picker"><input type="file" accept=".pdf,.doc,.docx" required /><i class="fa-solid fa-cloud-arrow-up"></i><span>Pilih file jawaban</span><small>Belum ada file dipilih</small></label><button class="btn btn-dark w-100 mt-3" type="submit">Kumpulkan LKM</button></form></div><div class="col-lg-7"><form class="reflection-form content-panel"><h4><i class="fa-solid fa-comments"></i> Refleksi Belajar</h4><div class="row g-3"><div class="col-md-6"><label class="form-label" for="name-2">Nama</label><input class="form-control" id="name-2" type="text" placeholder="Nama lengkap" required /></div><div class="col-md-6"><label class="form-label" for="class-2">Kelas</label><input class="form-control" id="class-2" type="text" placeholder="Contoh: X-A" required /></div><div class="col-12"><label class="form-label" for="reflection-2">Apa yang kamu pelajari hari ini?</label><textarea class="form-control" id="reflection-2" rows="3" placeholder="Tuliskan pemahaman atau kesulitanmu..." required></textarea></div></div><button class="btn btn-primary mt-3" type="submit">Kirim Refleksi</button></form></div></div></div></div>
             </article>
 
+            <!-- MATERI 3 -->
             <article class="accordion-item">
               <h3 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="material-number">03</span><span><small>Materi 3</small> Mesin Pencari & Mengevaluasi Sumber Informasi</span><span class="duration ms-auto me-3"><i class="fa-regular fa-clock"></i> 4 JP</span></button></h3>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#materialsAccordion"><div class="accordion-body"><p class="material-description">Pelajari cara kerja mesin pencari, teknik pencarian informasi, serta mengevaluasi kredibilitas sumber digital sebelum digunakan sebagai dasar pengambilan keputusan.</p><div class="activity-grid"><a class="activity-card material-link" href="/Users/user/Documents/TesterKumpul/Materi/Materi Mensin Pencari.pptx" target="_blank" rel="noopener"><span class="activity-icon blue"><i class="fa-solid fa-book-open"></i></span><span><strong>Materi Pembelajaran</strong><small>Buka atau unduh modul</small></span><i class="fa-solid fa-arrow-up-right-from-square action-arrow"></i></a><a class="activity-card test-link" href="https://quiz.zep.us/en/play/r7VpRp" data-test="Pretest: Mesin Pencari & Mengevaluasi Sumber Informasi"><span class="activity-icon purple"><i class="fa-solid fa-clipboard-question"></i></span><span><strong>Pretest</strong><small>Ukur pemahaman awal</small></span><i class="fa-solid fa-arrow-right action-arrow"></i></a><a class="activity-card test-link" href="https://quiz.zep.us/en/play/AO5mMZ" data-test="Posttest: Mesin Pencari & Mengevaluasi Sumber Informasi"><span class="activity-icon green"><i class="fa-solid fa-square-poll-vertical"></i></span><span><strong>Posttest</strong><small>Evaluasi setelah belajar</small></span><i class="fa-solid fa-arrow-right action-arrow"></i></a></div><div class="row g-4 mt-1"><div class="col-lg-5"><form class="task-form content-panel"><h4><i class="fa-solid fa-folder-open"></i> Pengumpulan LKM</h4><p>Unggah jawaban LKM dalam format PDF, DOC, atau DOCX.</p><label class="file-picker"><input type="file" accept=".pdf,.doc,.docx" required /><i class="fa-solid fa-cloud-arrow-up"></i><span>Pilih file jawaban</span><small>Belum ada file dipilih</small></label><button class="btn btn-dark w-100 mt-3" type="submit">Kumpulkan LKM</button></form></div><div class="col-lg-7"><form class="reflection-form content-panel"><h4><i class="fa-solid fa-comments"></i> Refleksi Belajar</h4><div class="row g-3"><div class="col-md-6"><label class="form-label" for="name-3">Nama</label><input class="form-control" id="name-3" type="text" placeholder="Nama lengkap" required /></div><div class="col-md-6"><label class="form-label" for="class-3">Kelas</label><input class="form-control" id="class-3" type="text" placeholder="Contoh: X-A" required /></div><div class="col-12"><label class="form-label" for="reflection-3">Apa yang kamu pelajari hari ini?</label><textarea class="form-control" id="reflection-3" rows="3" placeholder="Tuliskan pemahaman atau kesulitanmu..." required></textarea></div></div><button class="btn btn-primary mt-3" type="submit">Kirim Refleksi</button></form></div></div></div></div>
             </article>
 
+            <!-- MATERI 4 -->
             <article class="accordion-item"><h3 class="accordion-header" id="headingFour"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="material-number">04</span><span><small>Materi 4</small> Aplikasi Produktivitas Berbasis AI & Infografis Digital</span><span class="duration ms-auto me-3"><i class="fa-regular fa-clock"></i> 4 JP</span></button></h3><div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#materialsAccordion"><div class="accordion-body"><p class="material-description">Pelajari cara menggunakan AI sebagai asisten produktivitas untuk mencari ide, mengolah informasi, serta membuat infografis digital secara bertanggung jawab</p><div class="activity-grid"><a class="activity-card material-link" href="/Users/user/Documents/TesterKumpul/Materi/Aplikasi Produktivitas Berbasis AI & Infografis Digital.pptx" target="_blank" rel="noopener"><span class="activity-icon blue"><i class="fa-solid fa-book-open"></i></span><span><strong>Materi Pembelajaran</strong><small>Buka atau unduh modul</small></span><i class="fa-solid fa-arrow-up-right-from-square action-arrow"></i></a><a class="activity-card test-link" href="https://quiz.zep.us/en/play/EgEXa5" data-test="Pretest: Aplikasi Produktivitas Berbasis AI & Infografis Digital"><span class="activity-icon purple"><i class="fa-solid fa-clipboard-question"></i></span><span><strong>Pretest</strong><small>Ukur pemahaman awal</small></span><i class="fa-solid fa-arrow-right action-arrow"></i></a><a class="activity-card test-link" href="https://quiz.zep.us/en/play/lpobmo" data-test="Posttest: Aplikasi Produktivitas Berbasis AI & Infografis Digital"><span class="activity-icon green"><i class="fa-solid fa-square-poll-vertical"></i></span><span><strong>Posttest</strong><small>Evaluasi setelah belajar</small></span><i class="fa-solid fa-arrow-right action-arrow"></i></a></div><div class="row g-4 mt-1"><div class="col-lg-5"><form class="task-form content-panel"><h4><i class="fa-solid fa-folder-open"></i> Pengumpulan LKM</h4><p>Unggah jawaban LKM dalam format PDF, DOC, atau DOCX.</p><label class="file-picker"><input type="file" accept=".pdf,.doc,.docx" required /><i class="fa-solid fa-cloud-arrow-up"></i><span>Pilih file jawaban</span><small>Belum ada file dipilih</small></label><button class="btn btn-dark w-100 mt-3" type="submit">Kumpulkan LKM</button></form></div><div class="col-lg-7"><form class="reflection-form content-panel"><h4><i class="fa-solid fa-comments"></i> Refleksi Belajar</h4><div class="row g-3"><div class="col-md-6"><label class="form-label" for="name-4">Nama</label><input class="form-control" id="name-4" type="text" placeholder="Nama lengkap" required /></div><div class="col-md-6"><label class="form-label" for="class-4">Kelas</label><input class="form-control" id="class-4" type="text" placeholder="Contoh: X-A" required /></div><div class="col-12"><label class="form-label" for="reflection-4">Apa yang kamu pelajari hari ini?</label><textarea class="form-control" id="reflection-4" rows="3" placeholder="Tuliskan pemahaman atau kesulitanmu..." required></textarea></div></div><button class="btn btn-primary mt-3" type="submit">Kirim Refleksi</button></form></div></div></div></div></article>
-            <article class="accordion-item"><h3 class="accordion-header" id="headingFive"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><span class="material-number">05</span><span><small>Materi 5</small> Portofolio dan Review Penguatan Materi</span><span class="duration ms-auto me-3"><i class="fa-regular fa-clock"></i> 4 JP</span></button></h3><div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#materialsAccordion"><div class="accordion-body"><p class="material-description">none</p><div class="activity-grid"><a class="activity-card material-link" href="assets/materi-05.pdf" target="_blank" rel="noopener"><span class="activity-icon blue"><i class="fa-solid fa-book-open"></i></span><span><strong>Materi Pembelajaran</strong><small>Buka atau unduh modul</small></span><i class="fa-solid fa-arrow-up-right-from-square action-arrow"></i></a><a class="activity-card test-link" href="#" data-test="Pretest: Portofolio dan Review Penguatan Materi"><span class="activity-icon purple"><i class="fa-solid fa-clipboard-question"></i></span><span><strong>Pretest</strong><small>Ukur pemahaman awal</small></span><i class="fa-solid fa-arrow-right action-arrow"></i></a><a class="activity-card test-link" href="#" data-test="Posttest: Portofolio dan Review Penguatan Materi"><span class="activity-icon green"><i class="fa-solid fa-square-poll-vertical"></i></span><span><strong>Posttest</strong><small>Evaluasi setelah belajar</small></span><i class="fa-solid fa-arrow-right action-arrow"></i></a></div><div class="row g-4 mt-1"><div class="col-lg-5"><form class="task-form content-panel"><h4><i class="fa-solid fa-folder-open"></i> Pengumpulan LKM</h4><p>Unggah jawaban LKM dalam format PDF, DOC, atau DOCX.</p><label class="file-picker"><input type="file" accept=".pdf,.doc,.docx" required /><i class="fa-solid fa-cloud-arrow-up"></i><span>Pilih file jawaban</span><small>Belum ada file dipilih</small></label><button class="btn btn-dark w-100 mt-3" type="submit">Kumpulkan LKM</button></form></div><div class="col-lg-7"><form class="reflection-form content-panel"><h4><i class="fa-solid fa-comments"></i> Refleksi Belajar</h4><div class="row g-3"><div class="col-md-6"><label class="form-label" for="name-5">Nama</label><input class="form-control" id="name-5" type="text" placeholder="Nama lengkap" required /></div><div class="col-md-6"><label class="form-label" for="class-5">Kelas</label><input class="form-control" id="class-5" type="text" placeholder="Contoh: X-A" required /></div><div class="col-12"><label class="form-label" for="reflection-5">Apa yang kamu pelajari hari ini?</label><textarea class="form-control" id="reflection-5" rows="3" placeholder="Tuliskan pemahaman atau kesulitanmu..." required></textarea></div></div><button class="btn btn-primary mt-3" type="submit">Kirim Refleksi</button></form></div></div></div></div></article>
+
+            <!-- MATERI 5 -->
+            <article class="accordion-item"><h3 class="accordion-header" id="headingFive"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><span class="material-number">05</span><span><small>Materi 5</small> Portofolio dan Review Penguatan Materi</span><span class="duration ms-auto me-3"><i class="fa-regular fa-clock"></i> 4 JP</span></button></h3><div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#materialsAccordion"><div class="accordion-body"><p class="material-description">Review penguatan materi keseluruhan serta penyusunan portofolio hasil belajar.</p><div class="activity-grid"><a class="activity-card material-link" href="assets/materi-05.pdf" target="_blank" rel="noopener"><span class="activity-icon blue"><i class="fa-solid fa-book-open"></i></span><span><strong>Materi Pembelajaran</strong><small>Buka atau unduh modul</small></span><i class="fa-solid fa-arrow-up-right-from-square action-arrow"></i></a><a class="activity-card test-link" href="#" data-test="Pretest: Portofolio dan Review Penguatan Materi"><span class="activity-icon purple"><i class="fa-solid fa-clipboard-question"></i></span><span><strong>Pretest</strong><small>Ukur pemahaman awal</small></span><i class="fa-solid fa-arrow-right action-arrow"></i></a><a class="activity-card test-link" href="#" data-test="Posttest: Portofolio dan Review Penguatan Materi"><span class="activity-icon green"><i class="fa-solid fa-square-poll-vertical"></i></span><span><strong>Posttest</strong><small>Evaluasi setelah belajar</small></span><i class="fa-solid fa-arrow-right action-arrow"></i></a></div><div class="row g-4 mt-1"><div class="col-lg-5"><form class="task-form content-panel"><h4><i class="fa-solid fa-folder-open"></i> Pengumpulan LKM</h4><p>Unggah jawaban LKM dalam format PDF, DOC, atau DOCX.</p><label class="file-picker"><input type="file" accept=".pdf,.doc,.docx" required /><i class="fa-solid fa-cloud-arrow-up"></i><span>Pilih file jawaban</span><small>Belum ada file dipilih</small></label><button class="btn btn-dark w-100 mt-3" type="submit">Kumpulkan LKM</button></form></div><div class="col-lg-7"><form class="reflection-form content-panel"><h4><i class="fa-solid fa-comments"></i> Refleksi Belajar</h4><div class="row g-3"><div class="col-md-6"><label class="form-label" for="name-5">Nama</label><input class="form-control" id="name-5" type="text" placeholder="Nama lengkap" required /></div><div class="col-md-6"><label class="form-label" for="class-5">Kelas</label><input class="form-control" id="class-5" type="text" placeholder="Contoh: X-A" required /></div><div class="col-12"><label class="form-label" for="reflection-5">Apa yang kamu pelajari hari ini?</label><textarea class="form-control" id="reflection-5" rows="3" placeholder="Tuliskan pemahaman atau kesulitanmu..." required></textarea></div></div><button class="btn btn-primary mt-3" type="submit">Kirim Refleksi</button></form></div></div></div></div></article>
+          
+            <!-- MATERI 6: FLOWCHART -->
+            <article class="accordion-item">
+              <h3 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  <span class="material-number">06</span>
+                  <span><small>Materi 6</small> Flowchart</span>
+                  <span class="duration ms-auto me-3"><i class="fa-regular fa-clock"></i> 4 JP</span>
+                </button>
+              </h3>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#materialsAccordion">
+                <div class="accordion-body">
+                  <p class="material-description">Pelajari cara merepresentasikan algoritma dan prosedur dalam bentuk flowchart melalui simbol, urutan proses, percabangan, dan perulangan. Selanjutnya, terapkan konsep tersebut untuk menyelesaikan kasus sederhana dalam konteks Geologi dan Pertambangan.</p>
+                  
+                  <!-- MODUL MATERI FLOWCHART BERTAHAP -->
+                  <div class="flowchart-module mb-4 border rounded-3 p-3 bg-light">
+                    <ul class="nav nav-pills mb-3" id="flowchart-tab" role="tablist">
+                      <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#fc-konsep" type="button">Konsep</button></li>
+                      <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#fc-simbol" type="button">Simbol</button></li>
+                      <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#fc-membaca" type="button">Membaca & Membuat</button></li>
+                    </ul>
+                    <div class="tab-content bg-white p-3 border rounded-3" id="flowchart-tabContent">
+                      <!-- Konsep -->
+                      <div class="tab-pane fade show active" id="fc-konsep">
+                        <h5 class="fw-bold">Apa itu Flowchart?</h5>
+                        <p>Flowchart adalah diagram yang menampilkan langkah-langkah dan keputusan untuk melakukan sebuah proses dari suatu program. Setiap langkah digambarkan dalam bentuk diagram dan dihubungkan dengan garis atau arah panah.</p>
+                        <p><strong>Fungsi:</strong> Menyederhanakan rangkaian prosedur agar mudah dipahami, menjadi dokumentasi alur kerja, dan membantu mencari kesalahan (debugging) sebelum mempraktikkannya langsung.</p>
+                        <p><strong>Hubungan dengan Algoritma:</strong> Algoritma adalah urutan langkah logis penyelesaian masalah (berupa teks), sedangkan flowchart adalah representasi visual dari algoritma tersebut.</p>
+                      </div>
+                      <!-- Simbol -->
+                      <div class="tab-pane fade" id="fc-simbol">
+                        <h5 class="fw-bold">Simbol Dasar Flowchart</h5>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
+                          <div class="fc-symbol-card"><span class="badge bg-danger rounded-pill">Terminator</span> Mulai / Selesai (Bentuk Oval)</div>
+                          <div class="fc-symbol-card"><span class="badge bg-primary rounded-0">Process</span> Proses / Tindakan (Bentuk Persegi Panjang)</div>
+                          <div class="fc-symbol-card"><span class="badge bg-success" style="transform: skew(-15deg); display:inline-block;"><span style="transform: skew(15deg); display:block;">Input / Output</span></span> Data Masuk/Keluar (Jajar Genjang)</div>
+                          <div class="fc-symbol-card"><span class="badge bg-warning text-dark" style="transform: rotate(45deg); margin:10px;"><i class="fa-solid fa-diamond" style="transform: rotate(-45deg);"></i> Decision</span> Percabangan/Kondisi (Belah Ketupat)</div>
+                          <div class="fc-symbol-card"><span class="badge bg-secondary"><i class="fa-solid fa-arrow-right"></i> Flowline</span> Arah aliran proses</div>
+                        </div>
+                      </div>
+                      <!-- Membaca & Membuat -->
+                      <div class="tab-pane fade" id="fc-membaca">
+                        <h5 class="fw-bold">Struktur Umum</h5>
+                        <ul>
+                          <li><strong>Sequence (Urutan):</strong> Proses berjalan lurus dari atas ke bawah.</li>
+                          <li><strong>Decision (Percabangan):</strong> Memiliki kondisi Ya/Tidak yang memecah alur.</li>
+                          <li><strong>Loop (Perulangan):</strong> Alur kembali ke proses sebelumnya sampai kondisi tertentu terpenuhi.</li>
+                        </ul>
+                        <p><strong>Kesalahan Umum:</strong> Tidak ada simbol START/END, arah panah terbalik/tidak ada, simbol Decision tidak memiliki cabang Ya/Tidak, dan terjadi infinite loop (perulangan tanpa henti).</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="activity-grid">
+                    <a class="activity-card material-link" href="Materi/Materi flowchart untuk kelas X SMK.pptx" target="_blank">
+                      <span class="activity-icon blue"><i class="fa-solid fa-book-open"></i></span>
+                      <span><strong>Materi Lengkap</strong><small>Unduh file presentasi</small></span>
+                      <i class="fa-solid fa-arrow-up-right-from-square action-arrow"></i>
+                    </a>
+                    <!-- Ganti href="#" dengan tautan Google Drive Pretest Flowchart. -->
+                    <a class="activity-card test-link" href="https://forms.gle/tPDpsbjSfcdQ5mmp6" target="_blank" rel="noopener" data-test="Pretest Flowchart">
+                      <span class="activity-icon purple"><i class="fa-solid fa-clipboard-question"></i></span>
+                      <span><strong>Pretest</strong><small>Ukur pemahaman awal</small></span>
+                      <i class="fa-solid fa-arrow-up-right-from-square action-arrow"></i>
+                    </a>
+                    <!-- Ganti href="#" dengan tautan Google Drive Posttest Flowchart. -->
+                    <a class="activity-card test-link" href="https://forms.gle/MSvn2i5PS4mc3dnJ6" target="_blank" rel="noopener" data-test="Posttest Flowchart">
+                      <span class="activity-icon green"><i class="fa-solid fa-square-poll-vertical"></i></span>
+                      <span><strong>Posttest</strong><small>Evaluasi setelah belajar</small></span>
+                      <i class="fa-solid fa-arrow-up-right-from-square action-arrow"></i>
+                    </a>
+                  </div>
+
+                  <div class="dci-promo-card my-4 p-4 rounded-4 border">
+                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+                      <div>
+                        <span class="badge bg-primary mb-2 px-3 py-2 fs-7"><i class="fa-solid fa-users me-1"></i> Aktivitas Kelompok CBL</span>
+                        <h4 class="fw-bold mb-1">Digital Case Investigation - Flowchart</h4>
+                        <p class="text-muted small mb-0">Analisis kasus pertambangan & geologi sederhana, buat algoritma, dan rancang flowchart bersama kelompok.</p>
+                      </div>
+                      <a class="btn btn-primary px-4 py-2 fw-bold rounded-3 shadow-sm btn-open-dci" href="#dci" onclick="document.getElementById('dci-material-select').value='6'; document.getElementById('dci-material-select').dispatchEvent(new Event('change'));">
+                        <i class="fa-solid fa-diagram-project me-2"></i>Buka Ruang DCI
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row g-4 mt-1">
+                    <div class="col-lg-5">
+                      <form class="task-form content-panel">
+                        <h4><i class="fa-solid fa-folder-open"></i> Pengumpulan LKM Flowchart</h4>
+                        <label class="file-picker">
+                          <input type="file" accept=".pdf,.doc,.docx" required />
+                          <i class="fa-solid fa-cloud-arrow-up"></i><span>Pilih file jawaban</span><small>PDF/DOCX</small>
+                        </label>
+                        <button class="btn btn-dark w-100 mt-3" type="submit">Kumpulkan File</button>
+                      </form>
+                    </div>
+                    <div class="col-lg-7">
+                      <form class="reflection-form content-panel">
+                        <h4><i class="fa-solid fa-comments"></i> Refleksi Belajar Materi 6</h4>
+                        <div class="row g-3">
+                          <div class="col-md-6"><input class="form-control" id="name-6" type="text" placeholder="Nama" required /></div>
+                          <div class="col-md-6"><input class="form-control" id="class-6" type="text" placeholder="Kelas" required /></div>
+                          <div class="col-12"><textarea class="form-control" id="reflection-6" rows="3" placeholder="Apa yang dipahami, kesulitan, dan kontribusi dalam kelompok?" required></textarea></div>
+                        </div>
+                        <button class="btn btn-primary mt-3" type="submit">Kirim Refleksi</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
           </div>
         </div>
       </section>
+
+      <!-- ================================================== -->
+      <!-- SECTION DIGITAL CASE INVESTIGATION (DCI) INTEGRAL -->
+      <!-- ================================================== -->
+      <section id="dci" class="dci-section py-5 bg-white border-top">
+        <div class="container py-lg-3">
+          
+          <!-- DCI HEADER & STEPPER -->
+          <div class="dci-header mb-4">
+            <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+              <div>
+                <span class="eyebrow eyebrow-dark"><i class="fa-solid fa-shield-halved me-1"></i> Digital Investigation Workspace</span>
+                <h2 class="fw-extrabold mb-1" id="dciHeaderTitle">DIGITAL CASE INVESTIGATION</h2>
+                <p class="text-muted mb-2">Materi: <strong id="dciMaterialName">Pilih Materi</strong></p>
+                <label class="visually-hidden" for="dci-material-select">Pilih materi LKM</label>
+                <select class="form-select dci-material-select" id="dci-material-select" aria-describedby="dciMaterialHelp" required>
+                  <option value="" selected>Pilih Materi</option>
+                  <option value="1">Materi 1 - IPO, Hardware, Software, dan Sistem Operasi</option>
+                  <option value="2">Materi 2 - Konsep Dasar AI</option>
+                  <option value="3">Materi 3 - Mesin Pencari & Mengevaluasi Sumber Informasi</option>
+                  <option value="4">Materi 4 - Aplikasi Produktivitas Berbasis AI & Infografis Digital</option>
+                  <option value="5">Materi 5 - Portofolio dan Review Penguatan Materi</option>
+                  <option value="6">Materi 6 - Flowchart</option>
+                </select>
+                <small class="text-muted" id="dciMaterialHelp">Pilih materi untuk membuka LKM yang sesuai.</small>
+              </div>
+              <div class="text-end">
+                <span class="badge bg-secondary p-2 me-1" id="dciDraftStatus"><i class="fa-solid fa-floppy-disk me-1"></i> Draft Tersimpan</span>
+                <button class="btn btn-outline-danger btn-sm" id="btnResetDci" type="button"><i class="fa-solid fa-rotate-left me-1"></i> Reset</button>
+              </div>
+            </div>
+
+            <!-- STEPPER BAR -->
+            <div class="dci-stepper-wrapper mt-4">
+              <div class="dci-stepper d-flex justify-content-between">
+                <button class="step-item active" data-step="1"><span class="step-num">1</span><span class="step-label">Beranda</span></button>
+                <button class="step-item" data-step="2"><span class="step-num">2</span><span class="step-label">Kasus</span></button>
+                <button class="step-item" data-step="3"><span class="step-num">3</span><span class="step-label">Bukti</span></button>
+                <button class="step-item" data-step="4"><span class="step-num">4</span><span class="step-label">Evaluasi</span></button>
+                <button class="step-item" data-step="5"><span class="step-num">5</span><span class="step-label">Analisis</span></button>
+                <button class="step-item" data-step="6"><span class="step-num">6</span><span class="step-label">Keputusan</span></button>
+                <button class="step-item" data-step="7"><span class="step-num">7</span><span class="step-label">Refleksi</span></button>
+                <button class="step-item" data-step="8"><span class="step-num">8</span><span class="step-label">Kirim</span></button>
+              </div>
+              <div class="progress mt-2" style="height: 6px;">
+                <div class="progress-bar bg-primary" id="dciProgressBar" style="width: 12.5%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DCI CONTAINER ROOMS -->
+          <div class="dci-container card shadow-sm border-0 rounded-4 p-4 p-md-5">
+            
+            <!-- ROOM 1: BERANDA INVESTIGASI -->
+            <div class="dci-room active" id="room-1">
+              <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                  <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill fw-bold mb-3">
+                    <i class="fa-solid fa-user-secret me-1"></i> Tim Investigasi Digital
+                  </span>
+                  <h3 class="fw-bold mb-3" id="dciWelcomeTitle">Investigasi Kasus Pembelajaran</h3>
+                  <p class="lead text-dark" id="dciWelcomeDescription">Pilih materi terlebih dahulu untuk melihat kasus LKM yang sesuai.</p>
+                  <p class="text-muted">Dalam investigasi ini, Anda tidak hanya mencari jawaban. Periksa bukti, evaluasi sumber informasi, hubungkan temuan dengan materi yang dipilih, dan ambil keputusan berdasarkan bukti yang dapat dipertanggungjawabkan.</p>
+                  
+                  <div class="row g-3 my-3">
+                    <div class="col-sm-6"><div class="p-3 bg-light rounded-3 border"><small class="text-muted d-block">Materi</small><strong id="dciWelcomeMaterial">Pilih Materi</strong></div></div>
+                    <div class="col-sm-6"><div class="p-3 bg-light rounded-3 border"><small class="text-muted d-block">Model Pembelajaran</small><strong>Case-Based Learning (CBL)</strong></div></div>
+                    <div class="col-sm-6"><div class="p-3 bg-light rounded-3 border"><small class="text-muted d-block">Fokus Kemampuan</small><strong id="dciWelcomeFocus">Pilih materi terlebih dahulu</strong></div></div>
+                    <div class="col-sm-6"><div class="p-3 bg-light rounded-3 border"><small class="text-muted d-block">Estimasi Waktu</small><strong>60 – 90 Menit</strong></div></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-5">
+                  <div class="card border bg-light p-4 rounded-4">
+                    <h5 class="fw-bold mb-3"><i class="fa-solid fa-id-card text-primary me-2"></i>Identitas Peneliti</h5>
+                    <div class="mb-3">
+                      <label class="form-label fw-semibold" for="dci-student-name">Nama Lengkap Siswa</label>
+                      <input type="text" class="form-control" id="dci-student-name" placeholder="Masukkan nama lengkap" required />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label fw-semibold" for="dci-student-class">Kelas</label>
+                      <select class="form-select" id="dci-student-class" required>
+                        <option value="" selected disabled>Pilih kelas</option>
+                        <option value="10 - TKI">10 - TKI</option>
+                        <option value="10 - TFLM">10 - TFLM</option>
+                        <option value="10 - GP">10 - GP</option>
+                        <option value="10 - TITL">10 - TITL</option>
+                        <option value="10 - TBKR">10 - TBKR</option>
+                      </select>
+                    </div>
+                    <button type="button" class="btn btn-primary w-100 py-2 fw-bold btn-next-room" id="btnStartDci" data-next="2" disabled>
+                      Mulai Investigasi <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ROOM 2: STUDI KASUS -->
+            <div class="dci-room d-none" id="room-2">
+              <div id="dciCaseContent" class="d-none">
+              <h3 class="fw-bold mb-3"><i class="fa-solid fa-file-lines text-primary me-2"></i><span id="dciCaseTitle"></span></h3>
+              <div class="alert alert-info border-0 rounded-3 mb-4" id="dciCaseInstruction">
+                <i class="fa-solid fa-circle-info me-2"></i><strong>Petunjuk:</strong> <span id="dciCaseInstructionText"></span>
+              </div>
+
+              <div class="bg-light p-4 rounded-4 border mb-4">
+                <h5 class="fw-bold text-navy">Skenario Lapangan</h5>
+                <p id="dciCaseScenario1"></p>
+                <p id="dciCaseScenario2"></p>
+                <p class="mb-0" id="dciCaseScenario3"></p>
+              </div>
+
+              <div class="row g-4 mb-4">
+                <div class="col-md-6">
+                  <div class="card h-100 border p-3 rounded-3">
+                    <h6 class="fw-bold text-danger"><i class="fa-solid fa-triangle-exclamation me-2"></i><span id="dciSymptomsTitle">Temuan Awal</span></h6>
+                    <ul class="mb-0 ps-3 text-muted small" id="dciCaseSymptoms"></ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card h-100 border p-3 rounded-3">
+                    <h6 class="fw-bold text-primary"><i class="fa-solid fa-microchip me-2"></i><span id="dciFactsTitle">Informasi Kasus</span></h6>
+                    <ul class="mb-0 ps-3 text-muted small" id="dciCaseFacts"></ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SIMULASI TASK MANAGER -->
+              <div class="card border-primary p-4 rounded-4 bg-white shadow-sm mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h5 class="fw-bold mb-0 text-navy"><i class="fa-solid fa-desktop me-2"></i><span id="dciDataTitle">Data Simulasi Kasus</span></h5>
+                  <span class="badge bg-warning text-dark"><i class="fa-solid fa-flask me-1"></i> Data simulasi untuk kebutuhan investigasi pembelajaran.</span>
+                </div>
+                <div class="row g-3 text-center">
+                  <div class="col-md-4">
+                    <div class="p-3 border rounded-3 bg-light">
+                      <small class="text-muted fw-bold d-block metric-label"></small>
+                      <h2 class="fw-bold text-success mb-0 metric-value"></h2>
+                      <small class="text-muted metric-detail"></small>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="p-3 border rounded-3 bg-danger-subtle">
+                      <small class="text-danger fw-bold d-block metric-label"></small>
+                      <h2 class="fw-bold text-danger mb-0 metric-value"></h2>
+                      <small class="text-danger fw-semibold metric-detail"></small>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="p-3 border rounded-3 bg-light">
+                      <small class="text-muted fw-bold d-block metric-label"></small>
+                      <h2 class="fw-bold text-success mb-0 metric-value"></h2>
+                      <small class="text-muted metric-detail"></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-outline-secondary btn-prev-room" data-prev="1"><i class="fa-solid fa-arrow-left me-2"></i>Kembali</button>
+                <button type="button" class="btn btn-primary btn-next-room" data-next="3">Lanjut ke Evidence Room <i class="fa-solid fa-arrow-right ms-2"></i></button>
+              </div>
+              </div>
+              <div class="alert alert-warning mb-0" id="dciCaseSelectPrompt">Pilih Materi terlebih dahulu untuk membuka kasus LKM.</div>
+            </div>
+
+            <!-- ROOM 3: EVIDENCE ROOM -->
+            <div class="dci-room d-none" id="room-3">
+              <h3 class="fw-bold mb-2"><i class="fa-solid fa-folder-open text-primary me-2"></i>Evidence Room (Bukti-Bukti Investigasi)</h3>
+              <p class="text-muted mb-4">Setiap keputusan harus didukung oleh bukti. Periksa setiap sumber sebelum menggunakannya dalam analisis.</p>
+
+              <div class="row g-4 mb-4" id="evidenceCardsContainer">
+                <!-- Evidence 1 -->
+                <div class="col-md-6">
+                  <div class="card h-100 border rounded-4 p-3 evidence-card" data-evidence="1">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <span class="badge bg-primary">Evidence 1</span>
+                      <span class="badge bg-outline-secondary evidence-status">Belum ditinjau</span>
+                    </div>
+                    <h6 class="fw-bold mb-1">Data Telemetri Task Manager</h6>
+                    <p class="small text-muted mb-3">CPU: 35%, Memory (RAM): 89%, Disk SSD: 15%. Menunjukkan penggunaan memori mendekati kapasitas maksimum saat banyak aplikasi dibuka bersamaan.</p>
+                    <div class="mt-auto">
+                      <div class="form-check form-switch mb-2">
+                        <input class="form-check-input ev-use-check" type="checkbox" id="ev-check-1" />
+                        <label class="form-check-label small fw-bold" for="ev-check-1">Gunakan bukti ini dalam analisis?</label>
+                      </div>
+                      <textarea class="form-control form-control-sm ev-notes" rows="2" placeholder="Catatan investigasi terhadap Bukti 1..."></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Evidence 2 -->
+                <div class="col-md-6">
+                  <div class="card h-100 border rounded-4 p-3 evidence-card" data-evidence="2">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <span class="badge bg-primary">Evidence 2</span>
+                      <span class="badge bg-outline-secondary evidence-status">Belum ditinjau</span>
+                    </div>
+                    <h6 class="fw-bold mb-1">Spesifikasi Hardware Laboratorium</h6>
+                    <p class="small text-muted mb-3">Processor Intel i3, RAM 4 GB DDR4, Storage SSD 256 GB, OS Windows 11. Windows 11 secara umum membutuhkan RAM minimal 4 GB hanya untuk berjalan optimal.</p>
+                    <div class="mt-auto">
+                      <div class="form-check form-switch mb-2">
+                        <input class="form-check-input ev-use-check" type="checkbox" id="ev-check-2" />
+                        <label class="form-check-label small fw-bold" for="ev-check-2">Gunakan bukti ini dalam analisis?</label>
+                      </div>
+                      <textarea class="form-control form-control-sm ev-notes" rows="2" placeholder="Catatan investigasi terhadap Bukti 2..."></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Evidence 3 -->
+                <div class="col-md-6">
+                  <div class="card h-100 border rounded-4 p-3 evidence-card" data-evidence="3">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <span class="badge bg-primary">Evidence 3</span>
+                      <span class="badge bg-outline-secondary evidence-status">Belum ditinjau</span>
+                    </div>
+                    <h6 class="fw-bold mb-1">Dokumentasi Resmi Microsoft Support</h6>
+                    <p class="small text-muted mb-3">Mendokumentasikan bahwa ketika konsumsi RAM mendekati 100%, Windows 11 akan memindahkan data sementara ke Virtual Memory di storage (Paging), yang berakibat pada penurunan respon alokasi memori.</p>
+                    <div class="mt-auto">
+                      <div class="form-check form-switch mb-2">
+                        <input class="form-check-input ev-use-check" type="checkbox" id="ev-check-3" />
+                        <label class="form-check-label small fw-bold" for="ev-check-3">Gunakan bukti ini dalam analisis?</label>
+                      </div>
+                      <textarea class="form-control form-control-sm ev-notes" rows="2" placeholder="Catatan investigasi terhadap Bukti 3..."></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Evidence 4 -->
+                <div class="col-md-6">
+                  <div class="card h-100 border rounded-4 p-3 evidence-card" data-evidence="4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <span class="badge bg-primary">Evidence 4</span>
+                      <span class="badge bg-outline-secondary evidence-status">Belum ditinjau</span>
+                    </div>
+                    <h6 class="fw-bold mb-1">Artikel Blog Teknologi Umum</h6>
+                    <p class="small text-muted mb-3">Artikel bertajuk "Trik Komputer Cepat". Menyebutkan bahwa komputer lambat pasti disebabkan oleh virus atau registry penuh, dan menyarankan mendownload aplikasi "RAM Booster 2026".</p>
+                    <div class="mt-auto">
+                      <div class="form-check form-switch mb-2">
+                        <input class="form-check-input ev-use-check" type="checkbox" id="ev-check-4" />
+                        <label class="form-check-label small fw-bold" for="ev-check-4">Gunakan bukti ini dalam analisis?</label>
+                      </div>
+                      <textarea class="form-control form-control-sm ev-notes" rows="2" placeholder="Catatan investigasi terhadap Bukti 4..."></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Evidence 5 -->
+                <div class="col-md-6">
+                  <div class="card h-100 border rounded-4 p-3 evidence-card" data-evidence="5">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <span class="badge bg-primary">Evidence 5</span>
+                      <span class="badge bg-outline-secondary evidence-status">Belum ditinjau</span>
+                    </div>
+                    <h6 class="fw-bold mb-1">Forum Diskusi Komunitas Komputer</h6>
+                    <p class="small text-muted mb-3">Beberapa teknisi menyarankan untuk mengecek penggunaan RAM pada tab Performance Task Manager dan menutup tab browser yang berlebihan atau menambah memori fisik.</p>
+                    <div class="mt-auto">
+                      <div class="form-check form-switch mb-2">
+                        <input class="form-check-input ev-use-check" type="checkbox" id="ev-check-5" />
+                        <label class="form-check-label small fw-bold" for="ev-check-5">Gunakan bukti ini dalam analisis?</label>
+                      </div>
+                      <textarea class="form-control form-control-sm ev-notes" rows="2" placeholder="Catatan investigasi terhadap Bukti 5..."></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Evidence 6 -->
+                <div class="col-md-6">
+                  <div class="card h-100 border rounded-4 p-3 evidence-card" data-evidence="6">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <span class="badge bg-primary">Evidence 6</span>
+                      <span class="badge bg-outline-secondary evidence-status">Belum ditinjau</span>
+                    </div>
+                    <h6 class="fw-bold mb-1">Video Tutorial YouTube</h6>
+                    <p class="small text-muted mb-3">Judul "Mempercepat Komputer Tanpa Tambah Hardware". Menyarankan mematikan Windows Defender dan memodifikasi registry sistem secara manual.</p>
+                    <div class="mt-auto">
+                      <div class="form-check form-switch mb-2">
+                        <input class="form-check-input ev-use-check" type="checkbox" id="ev-check-6" />
+                        <label class="form-check-label small fw-bold" for="ev-check-6">Gunakan bukti ini dalam analisis?</label>
+                      </div>
+                      <textarea class="form-control form-control-sm ev-notes" rows="2" placeholder="Catatan investigasi terhadap Bukti 6..."></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-outline-secondary btn-prev-room" data-prev="2"><i class="fa-solid fa-arrow-left me-2"></i>Kembali</button>
+                <button type="button" class="btn btn-primary btn-next-room" data-next="4">Lanjut ke Evaluasi Sumber <i class="fa-solid fa-arrow-right ms-2"></i></button>
+              </div>
+            </div>
+
+            <!-- ROOM 4: EVALUASI SUMBER & SOURCE CHALLENGE -->
+            <div class="dci-room d-none" id="room-4">
+              <h3 class="fw-bold mb-3"><i class="fa-solid fa-filter-circle-dollar text-primary me-2"></i>Evaluasi Sumber Informasi & Source Challenge</h3>
+              <p class="text-muted mb-4">Evaluasi kualitas kredibilitas dan relevansi dari bukti informasi digital sebelum mengambil keputusan.</p>
+
+              <!-- EVALUASI EVIDENCE 3 (MICROSOFT SUPPORT) -->
+              <div class="card border rounded-4 p-4 mb-4">
+                <h5 class="fw-bold text-navy mb-2"><i class="fa-solid fa-shield text-success me-2"></i><span id="evalSourceTitle3">Evaluasi Evidence 3</span></h5>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Kredibilitas Sumber</label>
+                    <select class="form-select eval-credibility" id="eval-cred-3" required>
+                      <option value="" selected disabled>Pilih tingkat kredibilitas</option>
+                      <option value="Sangat rendah">Sangat rendah</option>
+                      <option value="Rendah">Rendah</option>
+                      <option value="Sedang">Sedang</option>
+                      <option value="Tinggi">Tinggi</option>
+                      <option value="Sangat tinggi">Sangat tinggi</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Relevansi Informasi</label>
+                    <select class="form-select eval-relevance" id="eval-rel-3" required>
+                      <option value="" selected disabled>Pilih tingkat relevansi</option>
+                      <option value="Tidak relevan">Tidak relevan</option>
+                      <option value="Kurang relevan">Kurang relevan</option>
+                      <option value="Relevan">Relevan</option>
+                      <option value="Sangat relevan">Sangat relevan</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label fw-semibold" for="eval-reason-3">Mengapa Anda memberikan penilaian tersebut?</label>
+                    <textarea class="form-control" id="eval-reason-3" rows="2" placeholder="Jelaskan alasan kredibilitas dan relevansi..." required></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <!-- EVALUASI EVIDENCE 4 (BLOG UNTUK RAM BOOSTER) -->
+              <div class="card border rounded-4 p-4 mb-4">
+                <h5 class="fw-bold text-navy mb-2"><i class="fa-solid fa-triangle-exclamation text-warning me-2"></i><span id="evalSourceTitle4">Evaluasi Evidence 4</span></h5>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Kredibilitas Sumber</label>
+                    <select class="form-select eval-credibility" id="eval-cred-4" required>
+                      <option value="" selected disabled>Pilih tingkat kredibilitas</option>
+                      <option value="Sangat rendah">Sangat rendah</option>
+                      <option value="Rendah">Rendah</option>
+                      <option value="Sedang">Sedang</option>
+                      <option value="Tinggi">Tinggi</option>
+                      <option value="Sangat tinggi">Sangat tinggi</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Relevansi Informasi</label>
+                    <select class="form-select eval-relevance" id="eval-rel-4" required>
+                      <option value="" selected disabled>Pilih tingkat relevansi</option>
+                      <option value="Tidak relevan">Tidak relevan</option>
+                      <option value="Kurang relevan">Kurang relevan</option>
+                      <option value="Relevan">Relevan</option>
+                      <option value="Sangat relevan">Sangat relevan</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label fw-semibold" for="eval-reason-4">Mengapa Anda memberikan penilaian tersebut?</label>
+                    <textarea class="form-control" id="eval-reason-4" rows="2" placeholder="Jelaskan alasan kredibilitas dan relevansi..." required></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SOURCE CHALLENGE SECTION -->
+              <div class="card border-primary bg-light p-4 rounded-4 mb-4">
+                <h5 class="fw-bold text-primary mb-3"><i class="fa-solid fa-bolt me-2"></i>Source Challenge</h5>
+                <p class="small text-muted mb-3" id="sourceChallengeIntro">Bandingkan dua klaim berikut sebelum mengambil keputusan:</p>
+                <div class="row g-3 mb-3">
+                  <div class="col-md-6">
+                    <div class="p-3 bg-white border rounded-3 h-100">
+                      <strong class="text-danger d-block mb-1" id="sourceATitle">Sumber A:</strong>
+                      <p class="small text-muted mb-0" id="sourceAClaim"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="p-3 bg-white border rounded-3 h-100">
+                      <strong class="text-primary d-block mb-1" id="sourceBTitle">Sumber B:</strong>
+                      <p class="small text-muted mb-0" id="sourceBClaim"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label fw-bold" id="sourceChallengeQuestion">Jika Anda harus mengambil keputusan, sumber mana yang lebih layak dijadikan dasar keputusan?</label>
+                  <div class="d-flex flex-wrap gap-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="sourceChallenge" id="scA" value="Sumber A" required />
+                      <label class="form-check-label" for="scA">Sumber A</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="sourceChallenge" id="scB" value="Sumber B" />
+                      <label class="form-check-label" for="scB">Sumber B</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="sourceChallenge" id="scBoth" value="Keduanya" />
+                      <label class="form-check-label" for="scBoth">Keduanya</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="sourceChallenge" id="scInfo" value="Belum cukup informasi" />
+                      <label class="form-check-label" for="scInfo">Belum cukup informasi</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="form-label fw-bold" for="scReason">Jelaskan alasan Anda mengevaluasi pilihan sumber di atas:</label>
+                  <textarea class="form-control" id="scReason" rows="2" placeholder="Berikan alasan kritis Anda..." required></textarea>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-outline-secondary btn-prev-room" data-prev="3"><i class="fa-solid fa-arrow-left me-2"></i>Kembali</button>
+                <button type="button" class="btn btn-primary btn-next-room" data-next="5">Lanjut ke Analysis Room <i class="fa-solid fa-arrow-right ms-2"></i></button>
+              </div>
+            </div>
+
+            <!-- ROOM 5: ANALYSIS ROOM -->
+            <div class="dci-room d-none" id="room-5">
+              <h3 class="fw-bold mb-3"><i class="fa-solid fa-brain text-primary me-2"></i>Analysis Room (Hubungan Bukti & Konsep)</h3>
+              <div class="alert alert-warning border-0 rounded-3 mb-4">
+                <i class="fa-solid fa-triangle-exclamation me-2"></i><strong>Peringatan Penting:</strong> <span id="analysisInstruction">Bedakan fakta, klaim, dugaan awal, dan kesimpulan logis. Hubungkan bukti dengan materi yang dipilih.</span>
+              </div>
+
+              <form id="analysisForm">
+                <div class="mb-3">
+                  <label class="form-label fw-bold" for="an-q1" id="an-label-1">1. Informasi apa pada kasus dan gejala yang menunjukkan adanya masalah?</label>
+                  <textarea class="form-control" id="an-q1" rows="2" placeholder="Jelaskan fakta data angka pada CPU/Memory/Disk..." required></textarea>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-bold" for="an-q2" id="an-label-2">2. Bukti apa saja yang paling relevan untuk dianalisis dan mengapa?</label>
+                  <textarea class="form-control" id="an-q2" rows="2" placeholder="Sebutkan bukti yang dipilih dan keterkaitannya..." required></textarea>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-bold" for="an-q3" id="an-label-3">3. Bagaimana konsep utama materi ini menjelaskan kondisi pada kasus?</label>
+                  <textarea class="form-control" id="an-q3" rows="2" placeholder="Analisis dari sudut pandang perangkat keras..." required></textarea>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-bold" for="an-q4" id="an-label-4">4. Bagaimana faktor lain pada kasus berkontribusi terhadap masalah?</label>
+                  <textarea class="form-control" id="an-q4" rows="2" placeholder="Analisis dari sudut pandang perangkat lunak..." required></textarea>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-bold" for="an-q5" id="an-label-5">5. Apa peran teknologi atau proses terkait dalam kasus ini?</label>
+                  <textarea class="form-control" id="an-q5" rows="2" placeholder="Analisis peran sistem operasi dalam manajemen memori..." required></textarea>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-bold" for="an-q6" id="an-label-6">6. Apakah semua informasi yang ditemukan dapat langsung digunakan sebagai dasar keputusan? Jelaskan.</label>
+                  <textarea class="form-control" id="an-q6" rows="2" placeholder="Analisis tingkat kepercayaaan informasi digital..." required></textarea>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-bold" for="an-q7" id="an-label-7">7. Berdasarkan seluruh bukti, apa kesimpulan utama Anda?</label>
+                  <textarea class="form-control" id="an-q7" rows="2" placeholder="Tuliskan dugaan/kesimpulan awal Anda berbasis bukti..." required></textarea>
+                </div>
+              </form>
+
+              <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn btn-outline-secondary btn-prev-room" data-prev="4"><i class="fa-solid fa-arrow-left me-2"></i>Kembali</button>
+                <button type="button" class="btn btn-primary btn-next-room" data-next="6">Lanjut ke Decision Room <i class="fa-solid fa-arrow-right ms-2"></i></button>
+              </div>
+            </div>
+
+            <!-- ROOM 6: DECISION ROOM -->
+            <div class="dci-room d-none" id="room-6">
+              <h3 class="fw-bold mb-3"><i class="fa-solid fa-gavel text-primary me-2"></i>Decision Room (Pengambilan Keputusan & Rekomendasi)</h3>
+              <div class="alert alert-success border-0 rounded-3 mb-4">
+                <i class="fa-solid fa-shield-halved me-2"></i><strong>Prinsip Keputusan:</strong> Rekomendasi harus <strong>aman</strong>, <strong>realistis</strong>, dan <strong>sesuai dengan bukti</strong>. Anda wajib menyebutkan nomor Evidence yang mendukung kesimpulan Anda.
+              </div>
+
+              <form id="decisionForm">
+                <div class="mb-3">
+                  <label class="form-label fw-bold" for="dec-q1" id="dec-label-1">1. Apa kesimpulan utama dari kasus ini?</label>
+                  <textarea class="form-control" id="dec-q1" rows="2" placeholder="Penyebab utama berdasarkan investigasi..." required></textarea>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-bold" for="dec-q2" id="dec-label-2">2. Bukti apa saja yang mendukung kesimpulan Anda?</label>
+                  <textarea class="form-control" id="dec-q2" rows="2" placeholder="Sebutkan bukti yang melandasi..." required></textarea>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-bold" for="dec-q3" id="dec-label-3">3. Apa rekomendasi konkret Anda untuk menindaklanjuti kasus tersebut?</label>
+                  <textarea class="form-control" id="dec-q3" rows="3" placeholder="Tuliskan langkah rekomendasi singkat dan panjang..." required></textarea>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-bold" for="dec-q4" id="dec-label-4">4. Mengapa rekomendasi Anda lebih dapat dipertanggungjawabkan dibanding alternatif lainnya?</label>
+                  <textarea class="form-control" id="dec-q4" rows="2" placeholder="Berikan alasan logis dan pertimbangan keamanan..." required></textarea>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-bold" for="dec-q5" id="dec-label-5">5. Apakah masih ada informasi tambahan yang Anda perlukan sebelum mengambil keputusan final?</label>
+                  <textarea class="form-control" id="dec-q5" rows="2" placeholder="Informasi tambahan jika ada..." required></textarea>
+                </div>
+              </form>
+
+              <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn btn-outline-secondary btn-prev-room" data-prev="5"><i class="fa-solid fa-arrow-left me-2"></i>Kembali</button>
+                <button type="button" class="btn btn-primary btn-next-room" data-next="7">Lanjut ke Reflection Room <i class="fa-solid fa-arrow-right ms-2"></i></button>
+              </div>
+            </div>
+
+            <!-- ROOM 7: REFLECTION ROOM -->
+            <div class="dci-room d-none" id="room-7">
+              <h3 class="fw-bold mb-3"><i class="fa-solid fa-lightbulb text-primary me-2"></i>Reflection Room (Refleksi Metakognitif & Sosial Emosional)</h3>
+              <p class="text-muted mb-4">Refleksikan proses berpikir Anda dan bagaimana Anda mengambil keputusan secara bertanggung jawab.</p>
+
+              <form id="reflectionRoomForm">
+                <div class="mb-4">
+                  <label class="form-label fw-bold" id="ref-label-1">1. Sebelum pembelajaran ini, apakah Anda biasanya langsung mencoba informasi yang ditemukan?</label>
+                  <div class="d-flex gap-4">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="refBefore" id="rbYa" value="Ya" required />
+                      <label class="form-check-label" for="rbYa">Ya</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="refBefore" id="rbTidak" value="Tidak" />
+                      <label class="form-check-label" for="rbTidak">Tidak</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="refBefore" id="rbKadang" value="Kadang-kadang" />
+                      <label class="form-check-label" for="rbKadang">Kadang-kadang</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label fw-bold" for="ref-q2" id="ref-label-2">2. Setelah melakukan investigasi kasus ini, apa yang berubah dari cara Anda mengevaluasi informasi digital?</label>
+                  <textarea class="form-control" id="ref-q2" rows="2" placeholder="Perubahan sikap kritis Anda..." required></textarea>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label fw-bold" for="ref-q3" id="ref-label-3">3. Bukti atau informasi mana yang paling memengaruhi keputusan akhir Anda?</label>
+                  <textarea class="form-control" id="ref-q3" rows="2" placeholder="Tuliskan bukti utama..." required></textarea>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label fw-bold" for="ref-q4" id="ref-label-4">4. Apa yang akan Anda lakukan secara berbeda ketika menemukan informasi seperti ini di masa mendatang?</label>
+                  <textarea class="form-control" id="ref-q4" rows="2" placeholder="Langkah preventif Anda..." required></textarea>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label fw-bold" for="ref-q5" id="ref-label-5">5. Bagian investigasi mana yang paling sulit bagi Anda dan bagaimana Anda mengatasinya?</label>
+                  <textarea class="form-control" id="ref-q5" rows="2" placeholder="Kesulitan dan solusi..." required></textarea>
+                </div>
+
+                <!-- INTEGRASI CASEL RESPONSIBLE DECISION MAKING -->
+                <div class="p-3 bg-light rounded-3 border mb-3">
+                  <label class="form-label fw-bold text-navy mb-1" for="ref-q6" id="ref-label-6"><i class="fa-solid fa-heart-pulse text-danger me-2"></i>6. Refleksi Tanggung Jawab Sosial (CASEL)</label>
+                  <p class="small text-muted" id="refDescription">Bagaimana Anda memastikan rekomendasi yang diambil tetap bertanggung jawab?</p>
+                  <textarea class="form-control" id="ref-q6" rows="2" placeholder="Tuliskan pertimbangan etis dan dampak sosial keputusan Anda..." required></textarea>
+                </div>
+              </form>
+
+              <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn btn-outline-secondary btn-prev-room" data-prev="6"><i class="fa-solid fa-arrow-left me-2"></i>Kembali</button>
+                <button type="button" class="btn btn-primary btn-next-room" data-next="8">Lanjut ke Tinjauan & Kirim <i class="fa-solid fa-arrow-right ms-2"></i></button>
+              </div>
+            </div>
+
+            <!-- ROOM 8: SUBMIT & SUMMARY -->
+            <div class="dci-room d-none" id="room-8">
+              <h3 class="fw-bold mb-3"><i class="fa-solid fa-paper-plane text-primary me-2"></i>Submit Investigation</h3>
+              <p class="text-muted mb-4">Periksa ringkasan hasil investigasi Anda dan konfirmasikan pernyataan integritas sebelum mengirimkan jawaban.</p>
+
+              <!-- CARD RINGKASAN HASIL SISWA -->
+              <div class="card border rounded-4 p-4 mb-4 bg-light">
+                <h5 class="fw-bold text-navy mb-3"><i class="fa-solid fa-clipboard-check text-primary me-2"></i>Ringkasan Investigasi</h5>
+                <div class="row g-3 small">
+                  <div class="col-md-6"><strong>Nama:</strong> <span id="sumName">-</span></div>
+                  <div class="col-md-6"><strong>Kelas:</strong> <span id="sumClass">-</span></div>
+                  <div class="col-12"><strong>Materi:</strong> <span id="sumMaterial">-</span></div>
+                  <div class="col-12"><strong>Bukti Digunakan:</strong> <span id="sumEvidence">-</span></div>
+                  <div class="col-12"><strong>Pilihan Source Challenge:</strong> <span id="sumChallenge">-</span></div>
+                  <div class="col-12"><strong>Penyebab Utama:</strong> <span id="sumCause">-</span></div>
+                  <div class="col-12"><strong>Rekomendasi Utama:</strong> <span id="sumRec">-</span></div>
+                </div>
+              </div>
+
+              <!-- CHECKBOX KOMITMEN INTEGRITAS -->
+              <div class="card border-warning bg-warning-subtle p-4 rounded-4 mb-4">
+                <h6 class="fw-bold text-dark mb-3"><i class="fa-solid fa-square-check me-2"></i>Pernyataan Integritas Peneliti Digital:</h6>
+                <div class="form-check mb-2">
+                  <input class="form-check-input dci-check-req" type="checkbox" id="chk1" required />
+                  <label class="form-check-label small" for="chk1">Saya telah memeriksa bukti sebelum mengambil keputusan.</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input dci-check-req" type="checkbox" id="chk2" required />
+                  <label class="form-check-label small" for="chk2">Saya membedakan fakta numerik dan pendapat/klaim tanpa dasar.</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input dci-check-req" type="checkbox" id="chk3" required />
+                  <label class="form-check-label small" for="chk3">Saya mempertimbangkan kredibilitas dan relevansi sumber informasi.</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input dci-check-req" type="checkbox" id="chk4" required />
+                  <label class="form-check-label small" for="chk4">Keputusan saya didukung oleh bukti yang dapat dipertanggungjawabkan.</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input dci-check-req" type="checkbox" id="chk5" required />
+                  <label class="form-check-label small" for="chk5">Saya memahami bahwa informasi internet tidak selalu dapat dipercaya secara langsung.</label>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <button type="button" class="btn btn-outline-secondary btn-prev-room" data-prev="7"><i class="fa-solid fa-arrow-left me-2"></i>Kembali</button>
+                <button type="button" class="btn btn-success btn-lg px-5 fw-bold" id="btnSubmitDci">
+                  <i class="fa-solid fa-paper-plane me-2"></i>Kirim Hasil Investigasi
+                </button>
+              </div>
+
+              <!-- TAMPILAN SUKSES SETELAH SUBMIT -->
+              <div class="d-none mt-4 text-center p-5 rounded-4 bg-success-subtle border border-success" id="dciSuccessScreen">
+                <i class="fa-solid fa-circle-check text-success display-3 mb-3"></i>
+                <h3 class="fw-bold text-success mb-2">Investigasi Berhasil Dikirim!</h3>
+                <p class="lead text-dark mb-4" id="dciSuccessMsg">Terima kasih. Hasil Digital Case Investigation Anda telah diterima oleh guru.</p>
+                <div class="d-flex justify-content-center gap-3">
+                  <button type="button" class="btn btn-outline-success fw-bold" id="btnToggleSummaryView"><i class="fa-solid fa-eye me-2"></i>Lihat Ringkasan Jawaban</button>
+                  <a href="#materi" class="btn btn-primary fw-bold"><i class="fa-solid fa-book-open me-2"></i>Kembali ke Materi</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          
+          <!-- DCI FLOWCHART WORKSPACE (Hanya muncul jika Materi 6 dipilih) -->
+          <div class="dci-flowchart-workspace card shadow-sm border-0 rounded-4 p-4 p-md-5 d-none" id="dci-flowchart-workspace">
+            
+            <!-- Stepper Khusus Flowchart -->
+            <div class="dci-stepper-wrapper mb-4">
+              <div class="dci-stepper d-flex justify-content-between" id="fc-stepper">
+                <button class="step-item active" data-fc-step="1"><span class="step-num">1</span><span class="step-label">Pilih Kasus</span></button>
+                <button class="step-item" data-fc-step="2"><span class="step-num">2</span><span class="step-label">Orientasi</span></button>
+                <button class="step-item" data-fc-step="3"><span class="step-num">3</span><span class="step-label">Analisis</span></button>
+                <button class="step-item" data-fc-step="4"><span class="step-num">4</span><span class="step-label">IPO</span></button>
+                <button class="step-item" data-fc-step="5"><span class="step-num">5</span><span class="step-label">Algoritma</span></button>
+                <button class="step-item" data-fc-step="6"><span class="step-num">6</span><span class="step-label">Flowchart</span></button>
+                <button class="step-item" data-fc-step="7"><span class="step-num">7</span><span class="step-label">Tracing</span></button>
+                <button class="step-item" data-fc-step="8"><span class="step-num">8</span><span class="step-label">Evaluasi & Solusi</span></button>
+                <button class="step-item" data-fc-step="9"><span class="step-num">9</span><span class="step-label">Refleksi</span></button>
+                <button class="step-item" data-fc-step="10"><span class="step-num"><i class="fa-solid fa-check"></i></span><span class="step-label">Report</span></button>
+              </div>
+              <div class="fc-step-legend" aria-label="Keterangan status tahapan">
+                <span><i class="fc-step-legend-swatch status-empty"></i>Putih: belum diisi</span>
+                <span><i class="fc-step-legend-swatch status-partial"></i>Kuning: belum semua diisi</span>
+                <span><i class="fc-step-legend-swatch status-complete"></i>Biru: semua kolom terisi</span>
+              </div>
+            </div>
+
+            <!-- TAHAP 1: FORM & PILIH KASUS -->
+            <div class="fc-room active" id="fc-room-1">
+              <h4 class="fw-bold"><i class="fa-solid fa-users text-primary me-2"></i>LANGKAH 1 — IDENTITAS & PILIH KASUS KELOMPOK</h4>
+              <div class="row g-4 mt-2">
+                <div class="col-md-4">
+                  <div class="card p-3 bg-light border">
+                    <label class="form-label">Nama Perwakilan</label>
+                    <input type="text" id="fc-nama" class="form-control mb-2" placeholder="Nama Lengkap">
+                    <label class="form-label">Kelas</label>
+                    <input type="text" id="fc-kelas" class="form-control mb-2" placeholder="Contoh: X Geologi">
+                    <label class="form-label">Kelompok Berapa?</label>
+                    <input type="number" id="fc-kelompok" class="form-control mb-2" placeholder="1-9" min="1" max="9">
+                    <label class="form-label">Nama Anggota Kelompok</label>
+                    <textarea id="fc-anggota" class="form-control" rows="3" placeholder="1. ...&#10;2. ..."></textarea>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3">
+                    <p class="text-muted small mb-0">Pilih salah satu kasus. Pastikan kelompok Anda memilih kasus yang belum dikerjakan kelompok lain.</p>
+                    <button type="button" class="btn btn-outline-danger btn-sm" id="btnResetFlowchartCases">
+                      <i class="fa-solid fa-rotate-left me-1"></i> Reset Pilihan Kasus
+                    </button>
+                  </div>
+                  <div class="row g-3" id="fc-cases-container">
+                    <!-- Di-generate oleh JavaScript -->
+                  </div>
+                  <small class="text-muted d-block mt-2">Reset akan membuat semua kasus tersedia kembali di browser ini.</small>
+                  <div class="d-flex justify-content-end mt-4">
+                    <button type="button" class="btn btn-primary fc-btn-next" data-next="2">Mulai Kasus <i class="fa-solid fa-arrow-right ms-2"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAHAP 2-9 (Template Konten Dinamis DCI Flowchart) -->
+            <div class="fc-room d-none" id="fc-room-2">
+              <h4 class="fw-bold text-primary" id="fc-judul-kasus">Judul Kasus</h4>
+              <div class="alert alert-info mt-3"><strong id="fc-konsep-kasus"></strong> | Kesulitan: <span id="fc-tingkat-kasus"></span></div>
+              <div class="card p-4 bg-light border mt-3">
+                <h5 class="fw-bold">Skenario</h5>
+                <p id="fc-skenario-kasus" style="white-space: pre-line;"></p>
+                <hr>
+                <h6 class="fw-bold">Tugas:</h6>
+                <p id="fc-tugas-kasus" style="white-space: pre-line;"></p>
+              </div>
+              <button class="btn btn-primary mt-4 float-end fc-btn-next" data-next="3">Mulai Analisis <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <!-- Tahap 3: Analisis -->
+            <div class="fc-room d-none" id="fc-room-3">
+              <h4 class="fw-bold">Analisis Masalah</h4>
+              <label class="form-label mt-3">1. Apa masalah utama dalam kasus?</label>
+              <textarea class="form-control fc-autosave" id="fc-ans-analisis-1" rows="2"></textarea>
+              <label class="form-label mt-3">2. Apa tujuan dari proses tersebut?</label>
+              <textarea class="form-control fc-autosave" id="fc-ans-analisis-2" rows="2"></textarea>
+              <label class="form-label mt-3">3. Langkah apa saja yang terdapat dalam kasus?</label>
+              <textarea class="form-control fc-autosave" id="fc-ans-analisis-3" rows="2"></textarea>
+              <label class="form-label mt-3">4. Apakah terdapat kondisi/keputusan atau perulangan?</label>
+              <textarea class="form-control fc-autosave" id="fc-ans-analisis-4" rows="2"></textarea>
+              <div class="mt-4 d-flex justify-content-between">
+                <button class="btn btn-outline-secondary fc-btn-prev" data-prev="2">Kembali</button>
+                <button class="btn btn-primary fc-btn-next" data-next="4">Lanjut IPO <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+
+            <!-- Tahap 4: IPO -->
+            <div class="fc-room d-none" id="fc-room-4">
+              <h4 class="fw-bold">Input, Proses, Output</h4>
+              <div class="row g-3 mt-2">
+                <div class="col-md-4"><label class="fw-bold text-success">INPUT</label><textarea class="form-control fc-autosave" id="fc-ans-ipo-input" rows="4"></textarea></div>
+                <div class="col-md-4"><label class="fw-bold text-primary">PROSES</label><textarea class="form-control fc-autosave" id="fc-ans-ipo-proses" rows="4"></textarea></div>
+                <div class="col-md-4"><label class="fw-bold text-danger">OUTPUT</label><textarea class="form-control fc-autosave" id="fc-ans-ipo-output" rows="4"></textarea></div>
+                <div class="col-md-6"><label class="fw-bold text-warning text-dark">DECISION / KONDISI (Bila Ada)</label><textarea class="form-control fc-autosave" id="fc-ans-ipo-decision" rows="3"></textarea></div>
+                <div class="col-md-6"><label class="fw-bold text-info text-dark">PERULANGAN (Bila Ada)</label><textarea class="form-control fc-autosave" id="fc-ans-ipo-loop" rows="3"></textarea></div>
+              </div>
+              <div class="mt-4 d-flex justify-content-between">
+                <button class="btn btn-outline-secondary fc-btn-prev" data-prev="3">Kembali</button>
+                <button class="btn btn-primary fc-btn-next" data-next="5">Lanjut Algoritma <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+
+            <!-- Tahap 5: Algoritma -->
+            <div class="fc-room d-none" id="fc-room-5">
+              <h4 class="fw-bold">Menyusun Algoritma</h4>
+              <p class="text-muted">Tuliskan algoritma langkah demi langkah secara berurutan.</p>
+              <div id="fc-algoritma-container">
+                <div class="input-group mb-2"><span class="input-group-text">1</span><input type="text" class="form-control fc-algo-input"></div>
+              </div>
+              <button class="btn btn-sm btn-outline-primary mt-2" onclick="addAlgoStep()">+ Tambah Langkah</button>
+              <div class="mt-4 d-flex justify-content-between">
+                <button class="btn btn-outline-secondary fc-btn-prev" data-prev="4">Kembali</button>
+                <button class="btn btn-primary fc-btn-next" data-next="6">Rancang Flowchart <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+
+            <!-- Tahap 6: Flowchart Builder Interaktif Alternatif -->
+            <div class="fc-room d-none" id="fc-room-6">
+              <h4 class="fw-bold">Merancang Flowchart</h4>
+              <p class="text-muted small">Tambahkan simbol, lalu klik simbol di preview untuk mengedit teks. Geser simbol untuk mengatur posisi dan buat panah yang menghubungkan node mana pun.</p>
+              
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card p-3 bg-light">
+                    <h6 class="fw-bold">Daftar Node</h6>
+                    <div id="fc-node-list"></div>
+                    <hr>
+                    <div class="d-flex gap-2">
+                      <select id="fc-node-type" class="form-select form-select-sm" aria-label="Jenis simbol flowchart">
+                        <option value="Start/End">Mulai / Selesai (Oval)</option>
+                        <option value="Process">Proses (Persegi Panjang)</option>
+                        <option value="Input/Output">Input / Output (Jajar Genjang)</option>
+                        <option value="Decision">Decision (Belah Ketupat)</option>
+                      </select>
+                      <button type="button" class="btn btn-sm btn-primary text-nowrap" onclick="addFlowNode()">Tambah Node</button>
+                    </div>
+                    <div class="fc-selection-editor d-none mt-3" id="fc-node-editor">
+                      <label class="form-label" for="fc-selected-node-text">Teks simbol terpilih</label>
+                      <input type="text" id="fc-selected-node-text" class="form-control form-control-sm" placeholder="Masukkan teks di simbol">
+                      <button type="button" class="btn btn-sm btn-outline-danger mt-2" id="fc-delete-node">Hapus Node</button>
+                    </div>
+                    <hr>
+                    <h6 class="fw-bold">Daftar Panah / Konektor</h6>
+                    <div id="fc-connection-list"></div>
+                    <div class="row g-2 mt-2">
+                      <div class="col-12">
+                        <label class="form-label small mb-1" for="fc-connection-from">Dari node</label>
+                        <select id="fc-connection-from" class="form-select form-select-sm"></select>
+                      </div>
+                      <div class="col-12">
+                        <label class="form-label small mb-1" for="fc-connection-to">Ke node</label>
+                        <select id="fc-connection-to" class="form-select form-select-sm"></select>
+                      </div>
+                      <div class="col-8">
+                        <label class="form-label small mb-1" for="fc-connection-label">Teks panah (contoh: Ya/Tidak)</label>
+                        <input type="text" id="fc-connection-label" class="form-control form-control-sm" placeholder="Kosongkan jika tanpa teks">
+                      </div>
+                      <div class="col-4 d-flex align-items-end">
+                        <button type="button" class="btn btn-sm btn-outline-primary w-100" id="fc-add-connection">Tambah Panah</button>
+                      </div>
+                    </div>
+                    <div class="fc-selection-editor d-none mt-3" id="fc-connection-editor">
+                      <label class="form-label" for="fc-selected-connection-label">Teks panah terpilih</label>
+                      <input type="text" id="fc-selected-connection-label" class="form-control form-control-sm" placeholder="Contoh: Ya atau Tidak">
+                      <label class="form-label mt-2" for="fc-selected-connection-angle">Arah lengkungan panah</label>
+                      <input type="range" id="fc-selected-connection-angle" class="form-range" min="-180" max="180" value="0">
+                      <label class="form-label" for="fc-selected-connection-offset">Geser panah</label>
+                      <input type="range" id="fc-selected-connection-offset" class="form-range" min="-180" max="180" value="0">
+                      <button type="button" class="btn btn-sm btn-outline-danger mt-1" id="fc-delete-connection">Hapus Panah</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card p-3 h-100 border-primary">
+                    <div class="d-flex justify-content-between mb-2">
+                      <h6 class="fw-bold">Preview Flowchart</h6>
+                      <button class="btn btn-xs btn-outline-danger" onclick="resetFlowchart()">Reset</button>
+                    </div>
+                    <div class="fc-canvas-scroll">
+                      <div id="fc-preview-area" class="fc-preview-area">
+                        <svg id="fc-connection-layer" class="fc-connection-layer" viewBox="0 0 900 600" aria-label="Panah antar node"></svg>
+                        <div id="fc-node-canvas" class="fc-node-canvas"></div>
+                        <span class="text-muted small fc-empty-canvas" id="fc-empty-canvas">Belum ada diagram. Tambahkan node untuk mulai.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-4 d-flex justify-content-between">
+                <button class="btn btn-outline-secondary fc-btn-prev" data-prev="5">Kembali</button>
+                <button class="btn btn-primary fc-btn-next" data-next="7">Lanjut Tracing <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+
+            <!-- Tahap 7: Tracing -->
+            <div class="fc-room d-none" id="fc-room-7">
+              <h4 class="fw-bold">Tracing / Uji Coba Flowchart</h4>
+              <label class="form-label">Tuliskan contoh satu input/kondisi untuk diuji:</label>
+              <input type="text" class="form-control fc-autosave" id="fc-ans-trace-input" placeholder="Misal: Siswa lupa membawa sarung tangan">
+              <label class="form-label mt-3">Jalur yang dilalui (Sebutkan node dari START sampai END):</label>
+              <textarea class="form-control fc-autosave" id="fc-ans-trace-path" rows="3" placeholder="START -> Periksa APD -> (Tidak lengkap) -> ..."></textarea>
+              <div class="mt-3">
+                <label class="form-label">1. Apakah alur sudah sesuai?</label><input type="text" class="form-control fc-autosave mb-2" id="fc-ans-trace-q1">
+                <label class="form-label">2. Apakah decision memiliki semua jalur yang diperlukan?</label><input type="text" class="form-control fc-autosave" id="fc-ans-trace-q2">
+              </div>
+              <div class="mt-4 d-flex justify-content-between">
+                <button class="btn btn-outline-secondary fc-btn-prev" data-prev="6">Kembali</button>
+                <button class="btn btn-primary fc-btn-next" data-next="8">Lanjut Evaluasi <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+
+            <!-- Tahap 8: Evaluasi & Solusi -->
+            <div class="fc-room d-none" id="fc-room-8">
+              <h4 class="fw-bold">Evaluasi dan Solusi Final</h4>
+              <label class="form-label mt-2">Kelemahan atau bagian yang harus diperbaiki dari flowchart awal:</label>
+              <textarea class="form-control fc-autosave mb-3" id="fc-ans-eval-1" rows="3"></textarea>
+              <label class="form-label">Bagaimana alur penyelesaian masalah (solusi) final kelompok Anda?</label>
+              <textarea class="form-control fc-autosave mb-3" id="fc-ans-eval-2" rows="3"></textarea>
+              <label class="form-label">Mengapa flowchart tersebut dianggap paling sesuai?</label>
+              <textarea class="form-control fc-autosave" id="fc-ans-eval-3" rows="2"></textarea>
+              <div class="mt-4 d-flex justify-content-between">
+                <button class="btn btn-outline-secondary fc-btn-prev" data-prev="7">Kembali</button>
+                <button class="btn btn-primary fc-btn-next" data-next="9">Lanjut Refleksi <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+
+            <!-- Tahap 9: Refleksi -->
+            <div class="fc-room d-none" id="fc-room-9">
+              <h4 class="fw-bold">Refleksi Individu & Tanggung Jawab Sosial</h4>
+              <label class="form-label mt-2">1. Apa yang saya pahami tentang flowchart setelah kegiatan ini?</label>
+              <textarea class="form-control fc-autosave mb-2" id="fc-ans-ref-1" rows="2"></textarea>
+              <label class="form-label">2. Bagian flowchart apa yang paling sulit?</label>
+              <textarea class="form-control fc-autosave mb-2" id="fc-ans-ref-2" rows="2"></textarea>
+              <label class="form-label">3. Bagaimana kerja sama kelompok membantu kalian menyelesaikan masalah?</label>
+              <textarea class="form-control fc-autosave" id="fc-ans-ref-3" rows="2"></textarea>
+              
+              <div class="mt-4 d-flex justify-content-between">
+                <button class="btn btn-outline-secondary fc-btn-prev" data-prev="8">Kembali</button>
+                <button class="btn btn-success" onclick="generateReport()">Selesaikan & Lihat Laporan <i class="fa-solid fa-check"></i></button>
+              </div>
+            </div>
+
+            <!-- Tahap 10: Report -->
+            <div class="fc-room d-none" id="fc-room-10">
+              <div id="printable-report" class="p-4 bg-white border">
+                <div class="text-center mb-4">
+                  <h3 class="fw-bold">INVESTIGATION REPORT</h3>
+                  <h5 class="text-muted">Digital Case Investigation - Flowchart</h5>
+                </div>
+                <table class="table table-bordered mb-4">
+                  <tr><th width="30%">Nama Perwakilan</th><td id="rep-nama"></td></tr>
+                  <tr><th>Kelas</th><td id="rep-kelas"></td></tr>
+                  <tr><th>Kelompok</th><td id="rep-kelompok"></td></tr>
+                  <tr><th>Anggota</th><td id="rep-anggota" style="white-space: pre-line;"></td></tr>
+                  <tr><th>Kasus Terpilih</th><td id="rep-kasus" class="fw-bold text-primary"></td></tr>
+                </table>
+                <h6 class="fw-bold bg-light p-2 border">Hasil Investigasi</h6>
+                <p><strong>Input:</strong> <span id="rep-input"></span></p>
+                <p><strong>Proses:</strong> <span id="rep-proses"></span></p>
+                <p><strong>Output:</strong> <span id="rep-output"></span></p>
+                <h6 class="fw-bold bg-light p-2 border mt-3">Flowchart Kelompok</h6>
+                <div class="fc-report-diagram-wrap">
+                  <svg id="fc-report-diagram" class="fc-report-diagram" viewBox="0 0 900 600" role="img" aria-label="Preview flowchart kelompok"></svg>
+                  <p id="fc-report-diagram-empty" class="text-muted text-center py-4 d-none">Belum ada node flowchart yang dibuat.</p>
+                </div>
+                <h6 class="fw-bold bg-light p-2 border mt-3">Representasi Algoritma & Evaluasi</h6>
+                <p><strong>Evaluasi:</strong> <span id="rep-eval"></span></p>
+                <p><strong>Solusi Final:</strong> <span id="rep-solusi"></span></p>
+                <hr>
+                <p class="small text-center text-muted">Laporan ini dibuat secara otomatis dari sistem e-learning DCI.</p>
+              </div>
+              <div class="mt-4 d-flex justify-content-center gap-3 no-print">
+                <button class="btn btn-outline-primary" onclick="window.print()"><i class="fa-solid fa-print me-2"></i> Cetak / Simpan PDF</button>
+                <button type="button" class="btn btn-success" id="btnSubmitFlowchartDci" onclick="saveToBackend()"><i class="fa-solid fa-cloud-arrow-up me-2"></i> Kirim ke Sistem</button>
+              </div>
+              <p class="fc-submit-status text-center small mt-3 mb-0" id="fc-submit-status" role="status" aria-live="polite"></p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
     </main>
 
-    <footer class="site-footer"><div class="container d-flex flex-column flex-md-row justify-content-between gap-2"><span><i class="fa-solid fa-graduation-cap me-2"></i>RuangBelajar</span><span>&copy; <span id="currentYear"></span> E-Learning. Dibuat untuk belajar.</span></div></footer>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span><i class="fa-solid fa-graduation-cap me-2"></i>RuangBelajar</span>
+        <span>&copy; <span id="currentYear"></span> E-Learning & Digital Investigation Portal. Dibuat untuk belajar.</span>
+      </div>
+    </footer>
+
     <div id="toastContainer" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
